@@ -19,7 +19,7 @@ function getScores() {
     var startOver = document.createElement("button");
     startOver.textContent = "Start Over";
     startOver.onclick = function() {
-        location.href = "/";
+        location.href = "./";
     };
     document.getElementById("scores").appendChild(startOver);
 

@@ -1,6 +1,6 @@
 
 function start() {
-  location.href="quiz.html"
+  location.href="./quiz.html"
 
 }
 

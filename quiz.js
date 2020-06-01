@@ -101,7 +101,7 @@ function submit() {
     });
 
     localStorage.setItem("scores", JSON.stringify(scores));
-    location.href = "scores.html";
+    location.href = "./scores.html";
 }
 
 getNextQuiz();
