@@ -9,10 +9,6 @@ function tick() {
 
     totalTime--;
 
-    if (totalTime <= 0) {
-        totalTime = 0;
-    }
-
     document.getElementById("time").textContent = "Time remaining: " + totalTime;
 
     if (totalTime <= 0) {
@@ -40,8 +36,6 @@ function getNextQuiz() {
         choices.appendChild(document.createElement("br"));
         choices.appendChild(button);
     }
-
-    timeId = setInterval(tick, 1000);
 
     document.getElementById("time").textContent = "Time remaining: " + totalTime;
 }
@@ -103,6 +97,8 @@ function submit() {
     localStorage.setItem("scores", JSON.stringify(scores));
     location.href = "./scores.html";
 }
+
+timeId = setInterval(tick, 1000);
 
 getNextQuiz();
 
